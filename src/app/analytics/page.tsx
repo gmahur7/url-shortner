@@ -52,6 +52,9 @@ const Page = () => {
         <>
         <div className='flex justify-center flex-col mt-20'>
             {/* <div className="w-3/4"> */}
+            <div className='text-center py-5'>
+                <p className='text-lg'>Enter your generated short URL to check analytics.</p>
+            </div>
             <div className="flex justify-center items-center gap-4 flex-col md:flex-row">
                 <input className="w-5/6 md:w-2/5 px-5 py-2 bg-rose-300 border-rose-400 border-2 hover:bg-rose-400 rounded-md text-black placeholder:text-red-700 placeholder:text-bold"
                     type="text" placeholder="Enter Short Url....."
@@ -64,8 +67,8 @@ const Page = () => {
             </div>
             {/* </div> */}
             {details !== null &&
-                <div>
-                    <div className='flex justify-center items-center gap-12 mt-8'>
+                <div className='px-2'>
+                    <div className='flex justify-center items-center gap-12 mt-8 flex-wrap'>
                         <div className='bg-rose-900 p-8 text-center rounded-md'>
                             <h3 className='mb-2 text-rose-200'>Last Visit</h3>
                             <h2 className='text-xl'>{formatedate(details?.updatedAt)}</h2>
@@ -84,7 +87,7 @@ const Page = () => {
                 </div>
             }
             {
-                loading && <div className='text-center'>Loading...</div>
+                loading && <div className='text-center py-4'>Loading...</div>
             }
         </div>
         <ToastContainer/>

@@ -40,9 +40,9 @@ export default function Home() {
 
   return (
     <>
-      <main className="h-screen flex justify-center items-center flex-col ">
-        <h1 className="text-bold text-4xl md:text-8xl mb-12 text-rose-300">Short Your Url !</h1>
-        <h2 className="text-bold text-lg md:text-xl mb-4 border-b-2">Enter url and click generate to short your url.</h2>
+      <main className="flex justify-center items-center flex-col">
+        <h1 className="text-bold text-4xl md:text-8xl mb-12 text-rose-300 mt-20">Short Your Url !</h1>
+        <h2 className="text-bold text-lg md:text-xl mb-4 border-b-2 px-2 text-center">Enter url and click generate to short your url.</h2>
         <div className="w-3/4">
           <div className="flex justify-center items-center gap-4 flex-col md:flex-row">
             <input className="w-5/6 md:w-2/5 px-5 py-2 bg-rose-300 border-rose-400 border-2 hover:bg-rose-400 rounded-md text-black placeholder:text-red-700 placeholder:text-bold"
